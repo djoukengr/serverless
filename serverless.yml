@@ -1,0 +1,54 @@
+# serverless.yml
+
+
+service: api-FilRouge-Romeo-DJOUKENG
+
+
+plugins:
+
+  - serverless-python-requirements
+
+  - serverless-wsgi
+
+
+custom:
+
+  wsgi:
+
+    app: FilRouge.app
+
+    packRequirements: false
+
+  pythonRequirements:
+
+    dockerizePip: false
+
+
+provider:
+
+  name: aws
+
+  runtime: python3.7
+
+  stage: prod
+
+  region: eu-west-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action: s3:PutObject
+      Resource: 'arn:aws:s3:::romy.s3.bucket/*'     
+
+functions:
+
+  app:
+
+    handler: wsgi_handler.handler
+
+    events:
+
+       - httpApi:
+          method: POST
+          path: /v1/convert
+       - httpApi:
+          method: POST
+          path: /v1/recover          
