@@ -1,0 +1,19 @@
+ Le volume dans le lecteur D s'appelle DATA
+ Le num‚ro de s‚rie du volume est 9693-6401
+
+ R‚pertoire de D:\SIO\FilRouge\serverless
+
+23/04/2020  18:07    <DIR>          .
+23/04/2020  18:07    <DIR>          ..
+23/04/2020  16:19                25 .gitignore
+23/04/2020  16:19            48ÿ782 Archi_globale.PNG
+23/04/2020  16:19               133 deploy_to_aws.bat
+23/04/2020  16:19               103 deploy_to_aws.sh
+23/04/2020  16:19             1ÿ853 FilRouge.py
+23/04/2020  16:19            13ÿ192 package-lock.json
+23/04/2020  16:19               634 package.json
+23/04/2020  16:19               181 requirements.txt
+23/04/2020  16:19               716 serverless.yml
+23/04/2020  18:07                 0 test.txt
+              10 fichier(s)           65ÿ619 octets
+               2 R‚p(s)  102ÿ243ÿ659ÿ776 octets libres
